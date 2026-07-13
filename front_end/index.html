@@ -1,56 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portal</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Student Portal</h1>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#grades">Grades</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Student Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#grades">Grades</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section id="hero">
-            <h1>Welcome to the Student Portal</h1>
-            <p>Explore courses, track your progress, and manage your academic journey.</p>
-            <button>Explore Courses</button>
-        </section>
+  <main>
+    <section id="hero">
+      <h1>Welcome to the Student Portal</h1>
+      <p>Explore courses, track your progress, and manage your academic journey.</p>
+      <button>Explore Courses</button>
+    </section>
 
-        <section id="courses">
-            <h2>Available Courses</h2>
+    <input id="search-courses" placeholder="Search courses...">
+    <button id="sort-credits">Sort by Credits</button>
+    <div class="course-grid"></div>
+    <p id="total-credits"></p>
+    <div id="selected-course"></div>
+  </main>
 
-            <article class="course-card">
-                <h3>Mathematics</h3>
-                <p>Learn algebra, calculus, and problem-solving techniques.</p>
-                <span>4 Credits</span>
-            </article>
+  <footer>
+    <p>&copy; 2026 Student Portal</p>
+  </footer>
 
-            <article class="course-card">
-                <h3>Computer Science</h3>
-                <p>Study programming, data structures, and algorithms.</p>
-                <span>5 Credits</span>
-            </article>
-
-            <article class="course-card">
-                <h3>English</h3>
-                <p>Develop communication and writing skills.</p>
-                <span>3 Credits</span>
-            </article>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Student Portal</p>
-    </footer>
+  <!-- Script at the bottom -->
+  <script type="module" src="app.js"></script>
 </body>
 </html>
